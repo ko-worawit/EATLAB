@@ -1,0 +1,23 @@
+Table Schema
+
+Course
+ID int (Primary key)
+Name varchar()
+Description Text
+CratedAt datetime
+UpdatedAt datetime
+
+Student
+ID int (Primary key)
+Name varchar()
+Email varchar()
+GraduationYear int
+CreatedAt datetime
+UpdatedAt datetime
+
+Enrollment
+ID int (Primary key)
+CourseID int (FK > Course.ID)
+StudentID int (FK > Student.ID)
+EnrollmentDate datetime
+EnrollmentYear int
